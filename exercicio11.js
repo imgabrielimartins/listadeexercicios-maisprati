@@ -14,13 +14,9 @@ for(let i = 0; i < 9; i++){
     idades.push(readlineSync.questionInt('Digite a idade: '))
 }
 
+console.log('\n--- Menores de idade ---');
 for (let i = 0; i < 9; i++) {
-  if (idades[i] < 18) {
-   console.log('\n--- Menores de idade ---');
-    for (let i = 0; i < 9; i++) {
   if (idades[i] < 18) {
     console.log(`Nome: ${nomes[i]} | Idade: ${idades[i]} anos`);
   }
-      }
-    }
 }
